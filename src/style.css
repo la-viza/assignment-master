@@ -1,0 +1,215 @@
+/* GLOBAL PARAMETERS */
+* {
+ margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  
+}
+body {
+   height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background-color: rgb(39, 79, 150, .9);
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* MAIN LAYOUT */
+#root {
+  max-width: 1500px;
+  margin: 0;
+}
+
+.card{
+display: flex; 
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 68%;
+   justify-content: center;
+    align-items: center;
+    background: #F4F6FB;
+  border: 2px solid white ;
+  box-shadow: 10px 10px 64px 0px rgba(180, 180, 207, 0.75);
+  -webkit-box-shadow: 10px 10px 64px 0px rgba(186, 186, 202, 0.75);
+  -moz-box-shadow: 10px 10px 64px 0px rgba(208, 208, 231, 0.75);
+  border-radius:15px;
+}
+
+
+/* COMPONENTS  */
+
+.form {
+  padding: 2rem;
+}
+
+.form-labels {
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+
+.countriesChosen {
+display: block;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  font-size:1rem;
+  color:#475569; 
+}
+
+.selectMenu {
+  width: 100%;
+  margin:0.3rem 0 1rem 0;
+  border-radius: 5px;
+  background-color: white transparent;
+  padding: 7px;
+  color: #7a7ab3;
+  border: 1px solid grey;
+  font-size:0.8rem;
+}
+
+label {
+    font-size: .8rem;
+    line-height: 1rem;
+    --tw-text-opacity: 1;
+    text-align:center;
+}
+
+label input{
+  border-radius: 5px;
+  background-color: white transparent;
+  padding: 5px;
+  width: 100%;
+  color: #7a7ab3;
+  border: 1px solid grey;
+}
+
+label input:focus-visible {
+  outline: 1px solid  #1e40af;
+}
+
+label input::placeholder {
+  color: #bcbcdf;
+}
+
+input[type="number"] {
+  width: 3.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid grey;
+  color: #7a7ab3;
+}
+
+label .weightInput {
+     width: 100%;
+     margin:0.3rem 0 1.5rem 0;
+     padding-left:1rem;
+}
+
+ .dimensions {
+    display:inline-block;
+    margin:0.3rem;
+}
+
+
+button {
+  margin-right: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 14px;
+  height: auto;
+  font-weight: 500;
+  border-radius:100px;
+  border: none;
+
+}
+.btn {
+     text-align: center;
+     border: 0;
+}
+
+.btnCalculate {
+  cursor: pointer;
+  font-weight: 600;
+  font-family: inherit;
+  border-radius: 100px;
+  transition: all .2s;
+  background: #1e40af;
+  opacity: 0.75;
+  border: 1px solid transparent;
+  display: flex;
+  margin: 1.2rem 0 1rem 8.5rem;
+  align-items: center !important;
+  font-size: 15px;
+  color: #eef2ff;
+  padding: 7px 16px;
+}
+
+.btnCalculate:hover {
+  background: #2563eb;
+  color: #dbeafe;
+}
+
+.btnCalculate  > svg {
+  width: 25px;
+  margin-left: 10px;
+  transition: transform .3s ease-in-out;
+}
+
+.btnCalculate:hover svg {
+  transform: translateX(3px);
+  color: #dbeafe;
+}
+
+.btnCalculate:active {
+  transform: scale(0.95);
+  color: #dbeafe;
+}
+
+.btnAddRemove{
+  color: #475569;
+  padding: 0.7em 1.7em;
+  font-size: 14px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  transition: all .3s;
+  box-shadow: 6px 6px 12px #c5c5c5,
+             -6px -6px 12px #ffffff;
+}
+
+.btnAddRemove:hover {
+  border: 1px solid white;
+}
+
+.btnAddRemove:active {
+  box-shadow: 4px 4px 12px #c5c5c5,
+             -4px -4px 12px #ffffff;
+}
+
+.totalPrice {
+    font-size:1rem;
+    font-weight: 600;
+    text-align:center !important;
+    margin:1.2rem 0 0.8rem;
+}
+
+
+@media (max-width: 700px) {
+ 
+.card, .form{
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+.btnCalculate {
+    margin:0rem 0 1.2rem 3rem ;
+}
+
+ label.dimensions {
+     display:block;
+     align-items:center;
+}
+
+}

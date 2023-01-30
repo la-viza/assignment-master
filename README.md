@@ -15,7 +15,7 @@ This code is a shipping cost calculator for multiple packages. It's implemented 
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: (https://shipping-form-challenge.netlify.app)
 
 ## My process
 
